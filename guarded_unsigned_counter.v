@@ -21,15 +21,15 @@ module guarded_unsigned_counter # (
 ) (
         input   clk,
         input   rstn,
-        output  reg [width - 1:0] out,
-        output  reg [guard_bits - 1:0] even_bit,
-        output  reg [guard_bits - 1:0] odd_bit
+
+        output  reg [width - 1:0]       out,
+        output  reg [guard_bits - 1:0]  even_bit,
+                                        odd_bit
 );
 
     integer i;
 
-    reg [guard_bits - 1: 0] odd_cnt = 0;
-    reg [guard_bits - 1: 0] even_cnt = 0;
+    reg [guard_bits - 1: 0] odd_cnt = 0, even_cnt = 0;
 
     always @ (posedge clk) begin
         if (!rstn) begin
@@ -51,7 +51,7 @@ module guarded_unsigned_counter # (
         end
     end
 
-        always @ (posedge clk) begin
+    always @ (posedge clk) begin
         if (!rstn) begin
             for (i = 0; i < width; i = i + 2) begin
                 if (out[i])
