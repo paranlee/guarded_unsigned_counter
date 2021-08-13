@@ -1,0 +1,1040 @@
+{
+  "creator": "Yosys 0.9 (git sha1 1979e0b)",
+  "modules": {
+    "guarded_unsigned_counter": {
+      "attributes": {
+        "dynports": 1,
+        "top": 1,
+        "src": "guarded_unsigned_counter.v:18"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rstn": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ]
+        },
+        "even_bit": {
+          "direction": "output",
+          "bits": [ 12, 13, 14, 15 ]
+        },
+        "odd_bit": {
+          "direction": "output",
+          "bits": [ 16, 17, 18, 19 ]
+        }
+      },
+      "cells": {
+        "$add$guarded_unsigned_counter.v:36$11": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 8,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 8
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 5, 6, 7, 8, 9, 10, 11 ],
+            "B": [ "1" ],
+            "Y": [ 20, 21, 22, 23, 24, 25, 26, 27 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$14": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28, 29, 30, 31 ],
+            "B": [ "1" ],
+            "Y": [ 32, 33, 34, 35 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$15": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36, 37, 38, 39 ],
+            "B": [ "1" ],
+            "Y": [ 40, 41, 42, 43 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$16": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44, 45, 46, 47 ],
+            "B": [ "1" ],
+            "Y": [ 48, 49, 50, 51 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$17": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52, 53, 54, 55 ],
+            "B": [ "1" ],
+            "Y": [ 56, 57, 58, 59 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$20": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60, 61, 62, 63 ],
+            "B": [ "1" ],
+            "Y": [ 64, 65, 66, 67 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$21": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 68, 69, 70, 71 ],
+            "B": [ "1" ],
+            "Y": [ 72, 73, 74, 75 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$22": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76, 77, 78, 79 ],
+            "B": [ "1" ],
+            "Y": [ 80, 81, 82, 83 ]
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$23": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 4,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 84, 85, 86, 87 ],
+            "B": [ "1" ],
+            "Y": [ 88, 89, 90, 91 ]
+          }
+        },
+        "$procdff$100": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": 1,
+            "WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 92, 93, 94, 95 ],
+            "Q": [ 16, 17, 18, 19 ]
+          }
+        },
+        "$procdff$101": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": 1,
+            "WIDTH": 8
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:34"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 96, 97, 98, 99, 100, 101, 102, 103 ],
+            "Q": [ 4, 5, 6, 7, 8, 9, 10, 11 ]
+          }
+        },
+        "$procdff$96": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": 1,
+            "WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 104, 105, 106, 107 ],
+            "Q": [ 60, 61, 62, 63 ]
+          }
+        },
+        "$procdff$97": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": 1,
+            "WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 108, 109, 110, 111 ],
+            "Q": [ 12, 13, 14, 15 ]
+          }
+        },
+        "$procdff$99": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": 1,
+            "WIDTH": 4
+          },
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 112, 113, 114, 115 ],
+            "Q": [ 28, 29, 30, 31 ]
+          }
+        },
+        "$procmux$28": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 84, 85, 86, 87 ],
+            "B": [ 88, 89, 90, 91 ],
+            "S": [ 10 ],
+            "Y": [ 116, 117, 118, 119 ]
+          }
+        },
+        "$procmux$34": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76, 77, 78, 79 ],
+            "B": [ 80, 81, 82, 83 ],
+            "S": [ 8 ],
+            "Y": [ 120, 121, 122, 123 ]
+          }
+        },
+        "$procmux$36": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 120, 121, 122, 123 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 3 ],
+            "Y": [ 84, 85, 86, 87 ]
+          }
+        },
+        "$procmux$40": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 68, 69, 70, 71 ],
+            "B": [ 72, 73, 74, 75 ],
+            "S": [ 6 ],
+            "Y": [ 124, 125, 126, 127 ]
+          }
+        },
+        "$procmux$42": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124, 125, 126, 127 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 3 ],
+            "Y": [ 76, 77, 78, 79 ]
+          }
+        },
+        "$procmux$46": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60, 61, 62, 63 ],
+            "B": [ 64, 65, 66, 67 ],
+            "S": [ 4 ],
+            "Y": [ 128, 129, 130, 131 ]
+          }
+        },
+        "$procmux$48": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 128, 129, 130, 131 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 3 ],
+            "Y": [ 68, 69, 70, 71 ]
+          }
+        },
+        "$procmux$51": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 116, 117, 118, 119 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 3 ],
+            "Y": [ 108, 109, 110, 111 ]
+          }
+        },
+        "$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 116, 117, 118, 119 ],
+            "B": [ 60, 61, 62, 63 ],
+            "S": [ 3 ],
+            "Y": [ 104, 105, 106, 107 ]
+          }
+        },
+        "$procmux$61": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52, 53, 54, 55 ],
+            "B": [ 56, 57, 58, 59 ],
+            "S": [ 11 ],
+            "Y": [ 132, 133, 134, 135 ]
+          }
+        },
+        "$procmux$67": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44, 45, 46, 47 ],
+            "B": [ 48, 49, 50, 51 ],
+            "S": [ 9 ],
+            "Y": [ 136, 137, 138, 139 ]
+          }
+        },
+        "$procmux$69": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 136, 137, 138, 139 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 3 ],
+            "Y": [ 52, 53, 54, 55 ]
+          }
+        },
+        "$procmux$73": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36, 37, 38, 39 ],
+            "B": [ 40, 41, 42, 43 ],
+            "S": [ 7 ],
+            "Y": [ 140, 141, 142, 143 ]
+          }
+        },
+        "$procmux$75": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 140, 141, 142, 143 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 3 ],
+            "Y": [ 44, 45, 46, 47 ]
+          }
+        },
+        "$procmux$79": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28, 29, 30, 31 ],
+            "B": [ 32, 33, 34, 35 ],
+            "S": [ 5 ],
+            "Y": [ 144, 145, 146, 147 ]
+          }
+        },
+        "$procmux$81": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 144, 145, 146, 147 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 3 ],
+            "Y": [ 36, 37, 38, 39 ]
+          }
+        },
+        "$procmux$84": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 132, 133, 134, 135 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 3 ],
+            "Y": [ 92, 93, 94, 95 ]
+          }
+        },
+        "$procmux$90": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 4
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 132, 133, 134, 135 ],
+            "B": [ 28, 29, 30, 31 ],
+            "S": [ 3 ],
+            "Y": [ 112, 113, 114, 115 ]
+          }
+        },
+        "$procmux$93": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 8
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "guarded_unsigned_counter.v:35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20, 21, 22, 23, 24, 25, 26, 27 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 3 ],
+            "Y": [ 96, 97, 98, 99, 100, 101, 102, 103 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\even_bit[3:0]": {
+          "hide_name": 1,
+          "bits": [ 108, 109, 110, 111 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          }
+        },
+        "$0\\even_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 104, 105, 106, 107 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          }
+        },
+        "$0\\odd_bit[3:0]": {
+          "hide_name": 1,
+          "bits": [ 92, 93, 94, 95 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          }
+        },
+        "$0\\odd_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 112, 113, 114, 115 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          }
+        },
+        "$0\\out[7:0]": {
+          "hide_name": 1,
+          "bits": [ 96, 97, 98, 99, 100, 101, 102, 103 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:34"
+          }
+        },
+        "$2\\even_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 68, 69, 70, 71 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          }
+        },
+        "$2\\odd_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 36, 37, 38, 39 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          }
+        },
+        "$3\\even_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 76, 77, 78, 79 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          }
+        },
+        "$3\\odd_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 44, 45, 46, 47 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          }
+        },
+        "$4\\even_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 84, 85, 86, 87 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          }
+        },
+        "$4\\odd_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 52, 53, 54, 55 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          }
+        },
+        "$5\\even_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 116, 117, 118, 119 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:54"
+          }
+        },
+        "$5\\odd_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 132, 133, 134, 135 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:41"
+          }
+        },
+        "$add$guarded_unsigned_counter.v:36$11_Y": {
+          "hide_name": 1,
+          "bits": [ 20, 21, 22, 23, 24, 25, 26, 27 ],
+          "attributes": {
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$14_Y": {
+          "hide_name": 1,
+          "bits": [ 32, 33, 34, 35 ],
+          "attributes": {
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$15_Y": {
+          "hide_name": 1,
+          "bits": [ 40, 41, 42, 43, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:45",
+            "unused_bits": "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$16_Y": {
+          "hide_name": 1,
+          "bits": [ 48, 49, 50, 51 ],
+          "attributes": {
+          }
+        },
+        "$add$guarded_unsigned_counter.v:45$17_Y": {
+          "hide_name": 1,
+          "bits": [ 56, 57, 58, 59, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:45",
+            "unused_bits": "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$20_Y": {
+          "hide_name": 1,
+          "bits": [ 64, 65, 66, 67, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58",
+            "unused_bits": "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$21_Y": {
+          "hide_name": 1,
+          "bits": [ 72, 73, 74, 75, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58",
+            "unused_bits": "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$22_Y": {
+          "hide_name": 1,
+          "bits": [ 80, 81, 82, 83, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58",
+            "unused_bits": "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$guarded_unsigned_counter.v:58$23_Y": {
+          "hide_name": 1,
+          "bits": [ 88, 89, 90, 91, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:58",
+            "unused_bits": "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$procmux$34_Y": {
+          "hide_name": 1,
+          "bits": [ 120, 121, 122, 123 ],
+          "attributes": {
+          }
+        },
+        "$procmux$40_Y": {
+          "hide_name": 1,
+          "bits": [ 124, 125, 126, 127 ],
+          "attributes": {
+          }
+        },
+        "$procmux$46_Y": {
+          "hide_name": 1,
+          "bits": [ 128, 129, 130, 131 ],
+          "attributes": {
+          }
+        },
+        "$procmux$67_Y": {
+          "hide_name": 1,
+          "bits": [ 136, 137, 138, 139 ],
+          "attributes": {
+          }
+        },
+        "$procmux$73_Y": {
+          "hide_name": 1,
+          "bits": [ 140, 141, 142, 143 ],
+          "attributes": {
+          }
+        },
+        "$procmux$79_Y": {
+          "hide_name": 1,
+          "bits": [ 144, 145, 146, 147 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:22"
+          }
+        },
+        "even_bit": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14, 15 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:25"
+          }
+        },
+        "even_cnt": {
+          "hide_name": 0,
+          "bits": [ 60, 61, 62, 63 ],
+          "attributes": {
+            "init": 0,
+            "src": "guarded_unsigned_counter.v:32"
+          }
+        },
+        "odd_bit": {
+          "hide_name": 0,
+          "bits": [ 16, 17, 18, 19 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:26"
+          }
+        },
+        "odd_cnt": {
+          "hide_name": 0,
+          "bits": [ 28, 29, 30, 31 ],
+          "attributes": {
+            "init": 0,
+            "src": "guarded_unsigned_counter.v:31"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:24"
+          }
+        },
+        "rstn": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "guarded_unsigned_counter.v:23"
+          }
+        }
+      }
+    }
+  }
+}
