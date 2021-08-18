@@ -39,12 +39,12 @@ module guarded_unsigned_counter # (
             odd_bit = 0;
             even_bit = 0;
 
-            for (i = 1; i < width; i += 2) begin
+            for (i = 1; i < width; i = i + 2) begin
                 if (out[i])
                     odd_bit = odd_bit + 1;
             end
 
-            for (i = 0; i < width; i += 2) begin
+            for (i = 0; i < width; i = i + 2) begin
                 if (out[i])
                     even_bit = even_bit + 1;
             end
