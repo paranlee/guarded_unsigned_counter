@@ -1,8 +1,10 @@
 # unsigned counter with guardian bits
 
-Counter with guardian who count each bit even or odd.
+Counter with tow guardians who count either even or odd position bit.
 
-This repository is summarizing on verilog review.
+This repository is summarizing on my verilog review.
+
+Tested on Ubuntu 20.04 WSL2.
 
 ## Install Verilog Environment
 
