@@ -1,6 +1,6 @@
 # unsigned counter with guardian bits
 
-Counter with tow guardians who count either even or odd position bit.
+Counter with two guardians who count either even or odd position bit.
 
 This repository is summarizing on my verilog review.
 
